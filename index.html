@@ -3,16 +3,63 @@
 
 <head>
     <meta charset="utf-8">
-    <div class="logo">Ream</div>
-    <title>Visit me !</title>
+    <title>Portfolio de Ream</title>
     <link rel="stylesheet" href="site-css.css">
     <meta name="viewport" content="width = device-with, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="container">
+    <header>
+        <a href="#" class="logo"><img src="REAM.png" id="ream" /></a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Component-4.png" id="quatre" />
+        <img src="Component-1.png" id="un" />
+        <img src="stars.png" id="stars" />
+        <h2 id="hello">BOO!</h2>
+        <a href="#aboutme" id="button">Explore</a>
+    </section>
+    <div class="about_me" id="aboutme">
+        <h2>Who am I?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatem deleniti provident rem labore
+            recusandae, necessitatibus distinctio consequatur illo odio sunt unde. Nemo possimus iure tenetur minima
+            fuga sequi incidunt!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At magnam architecto neque aliquam natus! Cum
+            veritatis commodi voluptatem, iusto sunt quisquam voluptatum consectetur nostrum dolor soluta molestias
+            eligendi saepe voluptates!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum, architecto incidunt ipsum adipisci
+            maiores tempore assumenda porro vel inventore expedita placeat repellat quibusdam excepturi temporibus
+            aperiam voluptas dolore totam!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum velit debitis, officia excepturi dolorum
+            cupiditate consectetur, quod delectus, libero non ut eaque. Consequatur enim perspiciatis alias debitis.
+            Corrupti, fugit eum!
+        </p><br></br>
+        <script>
+            let un = document.getElementById("un");
+            let quatre = document.getElementById("quatre");
+            let hello = document.getElementById("hello");
+            let button = document.getElementById("button");
+            let stars = document.getElementById("stars");
+            let header = document.querySelector("header");
 
-    </div>
+            window.addEventListener('scroll', function () {
+                let value = window.scrollY;
+                hello.style.left = value + 'px';
+                stars.style.left = value * 0.25 + 'px';
+                un.style.bottom = value * 0.5 + 'px';
+                hello.style.marginRight = value + 'px';
+                header.style.marginTop = value * 0.5 + 'px';
+
+
+            })
+        </script>
+
 </body>
 
 </html>
