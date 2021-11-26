@@ -20,7 +20,6 @@
         <input type="submit">
     </form>
     <?php
-    ini_set("SMTP","smtp.gmail.com" );
     if (isset($_POST['message'])) {
         $position_arobase = strpos($_POST['email'], '@');
         if ($position_arobase === false)
